@@ -1,6 +1,4 @@
 import React, { createRef } from "react"
-
-import logo from './logo.svg';
 import './App.css';
 import BtnCopy from "./com/BtnCopy";
 
@@ -20,12 +18,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div style={styles.App}>
         <p>email <input name="email" value={this.state.email} onChange={this.onChange.bind(this)} /> <BtnCopy value={this.state.email} /></p>
         <p>pass <input name="pass" value={this.state.pass} onChange={this.onChange.bind(this)} /> <BtnCopy value={this.state.pass} /></p>
-      </>
+        <p> <a href="https://vt.tiktok.com/ZS8Mv8bPv/" target="_blank">Link An</a></p>
+        <p> <a href="https://vt.tiktok.com/ZS8Mv1qy5/" target="_blank">Link Quynh</a></p>
+        <p> <a target="_blank">Link Luan</a></p>
+        <p> <a href="https://docs.google.com/spreadsheets/d/1ZpgerK-wuHxGTW4k_MBVqxDmkwv3qhd6QmR65bLlbYo/edit#gid=0" target="_blank">File tài khoản</a></p>
+      </div>
     );
   }
 }
-
+const styles = {
+  App: {
+  }
+}
 export default App;
